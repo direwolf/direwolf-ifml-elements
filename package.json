@@ -1,14 +1,14 @@
 {
   "name": "direwolf-ifml-elements",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "IFML elements for the Direwolf Modeler",
   "author": "direwolf-ifml-elements",
   "license": "MIT",
   "main": "index.js",
   "module": "index.js",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/direwolf/direwolf-ifml-elements"
+    "type": "git",
+    "url": "https://github.com/direwolf/direwolf-ifml-elements"
   },
   "scripts": {
     "start": "es-dev-server --app-index demo/index.html --node-resolve --open --watch",
