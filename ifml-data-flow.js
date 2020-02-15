@@ -1,5 +1,4 @@
 import { ModelShapePath } from 'direwolf-modeler/model-shape-path.js';
-import 'svg.js/dist/svg.js';
 
 export class IFMLDataFlow extends ModelShapePath {
 
