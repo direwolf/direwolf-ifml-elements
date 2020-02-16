@@ -17,7 +17,7 @@ export class IFMLViewComponent extends ModelShapeRect {
 
     this.rect.fill('lightgray').radius(15);
 
-    this.titleNode = group.plain(this._title).font({'family': 'monospace'}).attr({y:((this._height / 2) + 3), 'text-anchor': 'middle'}).x(this._width / 2);
+    this.titleNode = group.plain(this._title).font({'family': 'monospace'}).attr({y:((this._height / 2) + 3), 'text-anchor': 'middle'}).cx(this._width / 2);
 
     return group;
   }
@@ -33,12 +33,12 @@ export class IFMLViewComponent extends ModelShapeRect {
   _resize() {
     let width = this.width;
     let height = this.height;
-    this.titleNode.x(width / 2);
+    this.titleNode.cx(width / 2);
     this.titleNode.attr({y: ((height / 2) + 3)});
   }
 
   _updateTitle() {
-    this.titleNode.plain(this.title).font({'family': 'monospace'}).attr({y:((this.height / 2) + 3), 'text-anchor': 'middle'}).x(this.width / 2);
+    this.titleNode.plain(this.title).font({'family': 'monospace'}).attr({y:((this.height / 2) + 3), 'text-anchor': 'middle'}).cx(this.width / 2);
   }
 
   showPortOnHover() {

@@ -17,7 +17,7 @@ export class IFMLViewComponentList extends ModelShapeRect {
 
     this.rect.fill('lightgray').stroke({ width: 1, color: 'black' }).radius(15);
 
-    this.titleNode = group.plain('«List» ' + this._title).font({family: 'monospace', color: 'gray'}).attr({y: 20, 'text-anchor': 'middle'}).x(this._width / 2);
+    this.titleNode = group.plain('«List» ' + this._title).font({family: 'monospace', color: 'gray'}).attr({y: 20, 'text-anchor': 'middle'}).cx(this._width / 2);
 
     return group;
   }
@@ -79,7 +79,7 @@ export class IFMLViewComponentList extends ModelShapeRect {
       if (event.name === 'width') {
         this.titleNode.attr({x: event.value / 2});
         if (this.parameter) {
-          this.parameter.element.x((event.value - this.parameter.width) / 2);
+          this.parameter.element.cx((event.value - this.parameter.width) / 2);
         }
       }
     }
