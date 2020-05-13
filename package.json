@@ -17,8 +17,8 @@
   "dependencies": {
     "lit-html": "^1.0.0",
     "lit-element": "^2.0.1",
-    "direwolf-elements": "^0.0.4",
-    "direwolf-modeler": "^0.0.6"
+    "direwolf-elements": "^0.0.5",
+    "direwolf-modeler": "^0.0.16"
   },
   "devDependencies": {
     "es-dev-server": "^1.5.0"
