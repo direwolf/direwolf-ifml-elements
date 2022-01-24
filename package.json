@@ -1,6 +1,6 @@
 {
   "name": "direwolf-ifml-elements",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "IFML elements for the Direwolf Modeler",
   "author": "direwolf-ifml-elements",
   "license": "MIT",
@@ -14,11 +14,11 @@
     "start": "web-dev-server --app-index demo/index.html --node-resolve --open --watch"
   },
   "dependencies": {
-    "direwolf-elements": "direwolf/direwolf-elements#develop",
-    "direwolf-modeler": "direwolf/direwolf-modeler#develop",
-    "lit": "^2.0.0-rc.2"
+    "direwolf-elements": "direwolf/direwolf-elements",
+    "direwolf-modeler": "direwolf/direwolf-modeler",
+    "lit": "^2.0.2"
   },
   "devDependencies": {
-    "@web/dev-server": "^0.1.17"
+    "@web/dev-server": "^0.1.28"
   }
 }
